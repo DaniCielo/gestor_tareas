@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>App Gestor de Tareas</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.6/dist/sketchy/bootstrap.min.css">
+
+    <!-- Fuente de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- Nuestra hoja de estilo (main.css) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
 </head>
 <body>
-    <main>
-        <h1>Estoy en index.html</h1>
+    <main class="container p-4">
+        <h1 class="display-4 text-center mt-4">Estoy en index.html</h1>
     </main>
 
 </body>
