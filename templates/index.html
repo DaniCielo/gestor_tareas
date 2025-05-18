@@ -24,11 +24,11 @@
             <div class="col-md-4 offset-md-4 my-auto"> <!--Este div ocupará 4 columnas (centrado)-->
                 <div class="card"> <!--Creación del objeto card-->
                     <div class="card-header">
-                        <form action="">
+                        <form action="/crear-tarea" method="post">
                             <!--Separamos el input del botón metiendo el input en este form-group para que los elementos
                             no estén pegados y haya separación entre ellos-->
                             <div class="form-group">
-                                <input type="text" placeholder="Tarea" class="form-control" autofocus>
+                                <input type="text" name="contenido-tarea" placeholder="Tarea" class="form-control" autofocus>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block"> <!--btn-block hace que el botón ocupe todo el ancho-->
                                 Guardar
