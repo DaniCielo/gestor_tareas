@@ -36,7 +36,15 @@
                         </form>
                     </div>
                     <div class="card-body">
-
+                        <!-- Las etiquetas <ul> y <li> sirven para crear listas en HTML -->
+                        <ul>
+                            <!-- Gracias a Jinja se puede introducir código Python en nuestro HTML -->
+                            {% for tarea in lista_de_tareas %}
+                            <li>
+                                {{tarea.contenido}} <!--contenido es la variable de la clase Tarea con el texto-->
+                            </li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
             </div>
